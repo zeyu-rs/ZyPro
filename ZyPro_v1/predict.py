@@ -1,4 +1,3 @@
-
 """
 Author: Zeyu Xu
 Date Created: September 4, 2023
@@ -13,15 +12,15 @@ from zydata.rsseg import RemoteSensingPredictor
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-img_path = "data/testim/"
-out_path = "data/outimk2075/"
+img_path = "D:/***/"
+out_path = "D:/***/"
 img_type= ".jpg"
 
 input_channel=3
 model = UNetZ(input_channel, 1)
-model.load_state_dict(torch.load('logs/*.pth'))
+model.load_state_dict(torch.load('D:/***/*.pth'))
 model = model.to(device)
 model.eval()
 
-predictor = RemoteSensingPredictor(model, "*.tif", "*.tif")
+predictor = RemoteSensingPredictor(model, "D:/***/*.tif", "D:/***/*.tif")
 predictor.predict()

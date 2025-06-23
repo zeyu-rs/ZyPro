@@ -2,7 +2,7 @@
 Author: Zeyu Xu
 Date Created: September 5, 2023
 Last Modified: September 5, 2023
-Description: Clip into pathes
+Description: Clip into patches
 """
 
 import gdal
@@ -10,8 +10,8 @@ import numpy as np
 import fnmatch
 import os
 
-img_path=r"C:\Users\kt_co\Desktop\picele"
-clip_path=r"C:\Users\kt_co\Desktop\picele2"
+img_path=r"D:/***"
+clip_path=r"D:/***"
 leixing="ele"
 count=1
 dsize=512

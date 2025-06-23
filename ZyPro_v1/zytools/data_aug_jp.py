@@ -3,26 +3,26 @@ import os
 
 def augment_images(folder_path):
     for filename in os.listdir(folder_path):
-        if filename.endswith('.jpg') or filename.endswith('.png'):  # 您可以根据需要增加其他图像格式
+        if filename.endswith('.jpg') or filename.endswith('.png'):  # You can add other image formats as needed
             image_path = os.path.join(folder_path, filename)
 
-            # 打开原始图像
+            # Open original image
             image = Image.open(image_path)
 
-            # 垂直镜像
+            # Vertical flip
             flipped_image = image.transpose(Image.FLIP_TOP_BOTTOM)
             flipped_name = "flipped_" + filename
             flipped_image.save(os.path.join(folder_path, flipped_name))
 
-            # 旋转90度
-            rotated_image = image.rotate(-90)  # 逆时针旋转90度
+            # Rotate 90 degrees
+            rotated_image = image.rotate(-90)  # Rotate 90 degrees counterclockwise
             rotated_name = "rotated_" + filename
             rotated_image.save(os.path.join(folder_path, rotated_name))
 
-# 处理3通道的图像文件夹
-three_channel_folder = 'E:/aafa/zypro/data/image01/'
+# Process 3-channel image folder
+three_channel_folder = 'D:/***/'
 augment_images(three_channel_folder)
 
-# 处理单通道的图像文件夹
-single_channel_folder =  'E:/aafa/zypro/data/label01/'
+# Process single-channel image folder
+single_channel_folder = 'D:/***/'
 augment_images(single_channel_folder)

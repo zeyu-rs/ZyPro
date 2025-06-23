@@ -16,9 +16,9 @@ from zyloss.basic_loss import bceloss
 from zyloss.loss_seg import TverskyLoss,ComboLoss
 
 #Dataset
-images_folder_path = r'data\framdetect01\images/'
-labels_folder_path = r'data\framdetect01\labels2/'
-log_path='logs'
+images_folder_path = r'D:/***/'
+labels_folder_path = r'D:/***/'
+log_path='D:/***'
 task_name='unettrees'
 input_channel=3
 #Dataset_end

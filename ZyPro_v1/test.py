@@ -12,13 +12,13 @@ from zydata.rsseg import pre_tif_band2
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-img_path = r"data/datasettrees\test_images/"
-out_path = r"data/datasettrees\test_images_out/"
+img_path = r"D:/***/"
+out_path = r"D:/***/"
 img_type= ".jpg"
 input_channel=3
 
 model = UNetZ(input_channel, 1)
-model.load_state_dict(torch.load(r'logs\*.pth'))
+model.load_state_dict(torch.load(r'D:/***/*.pth'))
 #logs\2025-03-28-06-28-51\unettrees_final_2025-03-28-08-15-59.pth
 #logs\2025-03-24-04-53-54\unettrees_final_2025-03-24-06-41-17.pth
 model = model.to(device)

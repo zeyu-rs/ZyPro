@@ -1,5 +1,5 @@
 import os
-folder_path = 'E:/aafa/unet/d/label/'
+folder_path = 'D:/***/'
 for filename in os.listdir(folder_path):
     if filename.endswith('_mask.tif'): 
         new_name = filename.replace('_mask', '')

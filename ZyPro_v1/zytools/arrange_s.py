@@ -7,11 +7,11 @@ Description: Organize the wildebeest dataset
 
 import os
 
-base_dir = 'E:\\fold'
+base_dir = 'D:/***'
 
 years = ['2009', '2010', '2013', '2015', '2018', '2020']
-target_image_folder='E:/fold/image/'
-target_mask_folder='E:/fold/label/'
+target_image_folder='D:/***/'
+target_mask_folder='D:/***/'
 
 for year_str in years:
 
